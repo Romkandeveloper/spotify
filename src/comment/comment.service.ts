@@ -6,4 +6,8 @@ import {Comment, CommentDocument} from "./schemas/comment.schema";
 @Injectable()
 export class CommentService {
     constructor(@InjectModel(Comment.name) private commentModel: Model<CommentDocument>) {}
+
+    hi() {
+        return 'hi!';
+    }
 }

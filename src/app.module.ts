@@ -4,7 +4,7 @@ import {MongooseModule} from "@nestjs/mongoose";
 
 @Module({
     imports: [
-        MongooseModule.forRoot(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@spotify.xrkqaw5.mongodb.net/?retryWrites=true&w=majority`),
+        MongooseModule.forRoot(`mongodb+srv://admin:admin@spotify.xrkqaw5.mongodb.net/?retryWrites=true&w=majority`),
         TrackModule
     ]
 })

@@ -6,6 +6,10 @@ import {Comment, CommentSchema} from "./schemas/comment.schema";
 @Module({
     imports: [MongooseModule.forFeature([{name: Comment.name, schema: CommentSchema}])],
     providers: [CommentService],
+    exports: [CommentService]
 })
 
 export class TrackModule{}
+
+export class CommentModule {
+}
