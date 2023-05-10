@@ -9,7 +9,4 @@ import {Comment, CommentSchema} from "./schemas/comment.schema";
     exports: [CommentService]
 })
 
-export class TrackModule{}
-
-export class CommentModule {
-}
+export class CommentModule {}

@@ -7,8 +7,8 @@ import {MongooseModule} from "@nestjs/mongoose";
 
 @Module({
     imports: [
+        CommentModule,
         MongooseModule.forFeature([{name: Track.name, schema: TrackSchema}]),
-        CommentModule
     ],
     controllers: [TrackController],
     providers: [TrackService],
